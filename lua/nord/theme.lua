@@ -60,7 +60,7 @@ theme.loadSyntax = function()
 		markdownH2 = { fg = nord.nord11_gui, style = bold },
 		markdownH3 = { fg = nord.nord14_gui, style = bold },
 		Error = { fg = nord.nord11_gui, bg = nord.none, style = bold_underline }, -- any erroneous construct with bold
-		Comment = { fg = nord.nord3_gui_bright, style = italic }, -- italic comments
+		Comment = { fg = nord.nord5_gui, style = italic }, -- italic comments
 		Conditional = { fg = nord.nord9_gui, style = italic }, -- italic if, then, else, endif, switch, etc.
 		Function = { fg = nord.nord8_gui, style = italic }, -- italic funtion names
 		Identifier = { fg = nord.nord9_gui, style = italic }, -- any variable name
@@ -327,7 +327,7 @@ theme.loadTreeSitter = function()
 	treesitter["@text.title"] = { fg = nord.nord10_gui, bg = nord.none, style = bold }
 	treesitter["@text.strong"] = { fg = nord.nord10_gui, bg = nord.none, style = bold }
 	-- Comments
-	treesitter.TSComment = { fg = nord.nord3_gui_bright, style = italic }
+	treesitter.TSComment = { fg = nord.nord5_gui, style = italic }
 	-- Conditionals
 	treesitter.TSConditional = { fg = nord.nord9_gui, style = italic } -- For keywords related to conditionnals.
 	-- Function names
@@ -350,7 +350,7 @@ theme.loadTreeSitter = function()
 	treesitter.TSStringEscape = { fg = nord.nord15_gui, style = italic } -- For escape characters within a string.
 	treesitter.TSCharacter = { fg = nord.nord14_gui, style = italic } -- For characters.
 
-	treesitter["@comment"] = { fg = nord.nord3_gui_bright, style = italic }
+	treesitter["@comment"] = { fg = nord.nord5_gui, style = italic }
 	treesitter["@conditional"] = { fg = nord.nord9_gui, style = italic }
 	treesitter["@function"] = { fg = nord.nord8_gui, style = italic }
 	treesitter["@method"] = { fg = nord.nord8_gui, style = italic }
@@ -704,7 +704,7 @@ theme.loadPlugins = function()
 		LightspeedUniqueChar = { style = "bold,underline" },
 
 		-- copilot
-		CopilotLabel = { fg = nord.nord3_gui, bg = nord.none },
+		CopilotLabel = { fg = nord.nord5_gui, bg = nord.none },
 
 		-- Statusline
 		StatusLineDull = { fg = nord.nord3_gui, bg = nord.nord1_gui },
